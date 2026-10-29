@@ -4,7 +4,6 @@ import logging
 import time
 
 from app.idempotency import already_processed, mark_processed
-from app.metrics import failure, success
 from app.queue import dead_letter_queue
 from app.storage import copy_file
 
