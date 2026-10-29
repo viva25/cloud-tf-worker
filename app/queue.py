@@ -1,3 +1,4 @@
 from queue import Queue
-input_queue=Queue()
-dead_letter_queue=Queue()
+
+input_queue = Queue()
+dead_letter_queue = Queue()
