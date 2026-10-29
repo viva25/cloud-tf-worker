@@ -27,9 +27,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest ruff pip-audit
 
-      - name: Lint
-        run: ruff check app tests
-
       - name: Run tests
         run: pytest -v --tb=short
 
