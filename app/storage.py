@@ -1,6 +1,10 @@
-from pathlib import Path
 import shutil
+from pathlib import Path
 
-def copy_file(src,dst):
- Path(dst).parent.mkdir(parents=True,exist_ok=True)
- shutil.copy2(src,dst)
+
+def copy_file(src, dst):
+    source = Path(src)
+    destination = Path(dst)
+
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source, destination)
